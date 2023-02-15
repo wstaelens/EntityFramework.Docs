@@ -62,7 +62,7 @@ Saving and querying data follows the normal EF pattern:
 The Azure Cosmos DB provider for EF Core has multiple overloads of the [UseCosmos](/dotnet/api/Microsoft.EntityFrameworkCore.CosmosDbContextOptionsExtensions.UseCosmos) method. These overloads support the different ways that a connection can be made to the database, and the different ways of ensuring that the connection is secure.
 
 > [!IMPORTANT]
-> Make sure to understand [_Secure access to data in Azure Cosmos DB_](/azure/cosmos-db/secure-access-to-data) to understand the security implications and best practices for using each overload of the `UseCosmos` method.
+> Make sure to read [_Secure access to data in Azure Cosmos DB_](/azure/cosmos-db/secure-access-to-data) to understand the security implications and best practices for using each overload of the `UseCosmos` method.
 
 | Connection Mechanism       | UseCosmos Overload                                                     | More information                                                                          |
 |----------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
