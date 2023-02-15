@@ -18,7 +18,7 @@ Common EF Core patterns that either do not apply, or are a pit-of-failure, when 
 
 ## Azure Cosmos DB SDK limitations
 
-Some functionality supported by most EF Core database providers are not supported by the Azure Cosmos DB SDK. This includes synchronous APIs.
+Some functionality supported by most EF Core database providers isn't supported by the Azure Cosmos DB SDK. This includes synchronous APIs.
 
 > [!WARNING]
 > Since there are no sync versions of the low level methods EF Core relies on, the corresponding functionality is currently implemented by calling `.Wait()` on the returned `Task`. This means that using methods like `SaveChanges`, or `ToList` instead of their async counterparts could lead to a deadlock in your application
